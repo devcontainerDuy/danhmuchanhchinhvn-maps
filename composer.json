@@ -2,6 +2,7 @@
     "name": "khanh-duy/danhmuchanhchinhvn-maps",
     "description": "A PHP library for working with administrative maps of Vietnam.",
     "type": "library",
+    "version": "1.0.0",
     "keywords": [
         "laravel",
         "maps",
