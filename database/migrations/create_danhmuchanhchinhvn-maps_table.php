@@ -6,8 +6,19 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration {
 
-    public $tableName = config('gso.tables');
-    public $columnsName = config('gso.columns');
+    public $tableName;
+    public $columnsName;
+
+    /**
+     * Create a new migration instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->tableName = config('gso.tables');
+        $this->columnsName = config('gso.columns');
+    }
 
     /**
      * Run the migrations.
