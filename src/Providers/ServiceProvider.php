@@ -30,7 +30,7 @@ class ServiceProvider extends BaseServiceProvider
         ], 'config');
 
         $this->publishes([
-            __DIR__ . '/../database/migrations/create_danhmuchanhchinhvn-maps_table.php' => $this->generateMigrationFileName($filesystem),
+            dirname(__DIR__, 2) . '/database/migrations/create_danhmuchanhchinhvn-maps_table.php' => $this->generateMigrationFileName($filesystem),
         ], 'migrations');
 
         $this->commands([
