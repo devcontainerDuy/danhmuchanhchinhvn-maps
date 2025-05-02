@@ -22,10 +22,10 @@ class GSOImports implements ToArray, WithChunkReading, WithHeadingRow, SkipsOnFa
     protected $table;
     protected $columns;
 
-    public function __construct($table = config("gso.tables"), $columns = config("gso.columns"))
+    public function __construct()
     {
-        $this->table = $table;
-        $this->columns = $columns;
+        $this->table = config('gso.tables');
+        $this->columns = config('gso.columns');
 
         $this->loadProvinceMap();
         $this->loadDistrictMap();
