@@ -27,7 +27,7 @@
             "email": "khanhduytran1803@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "config": {
         "optimize-autoloader": true,
         "sort-packages": true
