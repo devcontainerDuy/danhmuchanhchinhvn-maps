@@ -1,0 +1,43 @@
+{
+    "name": "khanh-duy/danhmuchanhchinhvn-maps",
+    "description": "A PHP library for working with administrative maps of Vietnam.",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "maps",
+        "danhmuchanhchinhvn"
+    ],
+    "require": {
+        "php": "^8.2",
+        "maatwebsite/excel": "*",
+        "guzzlehttp/guzzle": "*",
+        "illuminate/support": "*",
+        "illuminate/console": "*",
+        "illuminate/database": "*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "KhanhDuy\\DanhmuchanhchinhvnMaps\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "devcontainerDuy",
+            "email": "khanhduytran1803@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KhanhDuy\\DanhmuchanhchinhvnMaps\\Providers\\ServiceProvider"
+            ]
+        }
+    },
+    "prefer-stable": true
+}
