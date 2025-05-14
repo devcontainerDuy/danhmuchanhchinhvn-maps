@@ -47,7 +47,6 @@ class GSOImports implements ToArray, WithChunkReading, WithHeadingRow, SkipsOnFa
         foreach ($rows as $row) {
             if (!empty($row['ma_tp']) && !empty($row['ma_qh']) && !empty($row['ma_px'])) {
                 if (isset($this->wardMap[$row['ma_px']])) {
-                    // Update existing ward
                     Ward::where($this->columns['gso_id'], $row['ma_px'])
                         ->update([$this->columns['name'] => $row['phuong_xa']]);
                 } else {
